@@ -33,7 +33,8 @@ body {
     width: 100%;
     height: 100%;
     z-index: -2;
-    opacity: 0.05;
+    opacity: 0.15;
+    /* Increased opacity */
 }
 
 .overlay {
@@ -521,9 +522,16 @@ footer {
 }
 
 .copyright {
-    font-size: 0.8rem;
-    color: var(--dim-color);
     margin-top: 1rem;
+    display: none;
+    /* Hide copyright as requested */
+}
+
+.email-contact {
+    margin-top: 1rem;
+    font-family: var(--font-heading);
+    color: var(--accent-color);
+    font-size: 0.9rem;
 }
 
 /* Projects Page */
