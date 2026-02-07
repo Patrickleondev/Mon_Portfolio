@@ -1,0 +1,29 @@
+title: RedTeamer Blog
+author: Koffi Patrick-Léon GANDONOU
+description: Writeups CTF & AI RedTeaming Labs
+baseurl: "/blog"
+url: "https://Patrickleondev.github.io" # To be updated with your actual GitHub Pages URL
+
+# Social Links
+twitter_username: gkpl0010
+github_username:  Patrickleondev
+linkedin_username: patrick-léon-gandonou
+tryhackme_p: t3chwiz4rd
+htb_p: 2165503
+theme: minima
+
+# Hacker Theme Customization
+accent_color: "#00ff41"
+background_color: "#0d0208"
+
+# Markdown processor
+markdown: kramdown
+highlighter: rouge
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .github
+  - Dockerfile

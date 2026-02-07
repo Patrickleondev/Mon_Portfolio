@@ -1,0 +1,48 @@
+name: Deploy to GitHub Pages (Hybrid Vite + Jekyll)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 🔧
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build Vite (Landing Page) 🔧
+        run: |
+          npm install
+          npm run build
+
+      - name: Setup Ruby/Jekyll 💎
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+          working-directory: blog
+
+      - name: Build Jekyll (Blog) 🔧
+        run: |
+          cd blog
+          bundle install
+          bundle exec jekyll build --baseurl /blog
+          cd ..
+
+      - name: Merge Builds 📦
+        run: |
+          # Move Jekyll output into Vite's dist/blog
+          mkdir -p dist/blog
+          cp -R blog/_site/* dist/blog/
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist

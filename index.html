@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI RedTeamer | Portfolio</title>
+    <meta name="description"
+        content="Portfolio de GANDONOU Koffi Patrick-Léon - Spécialiste AI RedTeaming & CyberSécurité">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="matrix-bg"></div>
+    <main>
+        <header>
+            <div class="terminal-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="title">guest@redteamer: ~</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">// 01. <span class="nav-text">Accueil</span></a></li>
+                    <li><a href="#about">// 02. <span class="nav-text">Bio</span></a></li>
+                    <li><a href="#certs">// 03. <span class="nav-text">Certifications</span></a></li>
+                    <li><a href="#labs">// 04. <span class="nav-text">Labs</span></a></li>
+                    <li><a href="/blog">// 05. <span class="nav-text">Blog (CTF)</span></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="AI RED TEAMER">AI RED TEAMER</h1>
+            </div>
+            <p class="typewriter">> Initializing secure connection...</p>
+            <p class="subtitle">Spécialiste en Sécurité Offensive des IA | Pentester</p>
+            <div class="social-links">
+                <a href="https://tryhackme.com/p/t3chwiz4rd" target="_blank" title="TryHackMe">THM</a>
+                <a href="https://app.hackthebox.com/users/2165503" target="_blank" title="HackTheBox">HTB</a>
+                <a href="https://github.com/Patrickleondev" target="_blank" title="GitHub">GH</a>
+                <a href="https://www.linkedin.com/in/patrick-léon-gandonou/" target="_blank" title="LinkedIn">IN</a>
+                <a href="https://x.com/gkpl0010" target="_blank" title="X (Twitter)">X</a>
+            </div>
+            <div class="cta">
+                <a href="#labs" class="btn">Accéder aux Labs</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2><span class="dim">//</span> À propos de moi</h2>
+            <div class="content">
+                <p>Passionné par la cybersécurité et les vulnérabilités de l'Intelligence Artificielle. Mon objectif est
+                    d'aider les organisations à sécuriser leurs modèles de langage (LLMs) contre les injections de
+                    prompts et autres attaques adverses.</p>
+            </div>
+        </section>
+
+        <section id="certs">
+            <h2><span class="dim">//</span> Certifications</h2>
+            <div class="cert-grid">
+                <!-- Les certifs seront injectées ici ou codées en dur -->
+                <div class="cert-card">
+                    <h3>CEH v12</h3>
+                    <p>Certified Ethical Hacker</p>
+                </div>
+                <div class="cert-card">
+                    <h3>ISC2 CC</h3>
+                    <p>Certified in Cybersecurity</p>
+                </div>
+                <div class="cert-card">
+                    <h3>CNSP</h3>
+                    <p>Certified Network Security Practitionner</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="labs">
+            <h2><span class="dim">//</span> AI RedTeaming Labs</h2>
+            <div class="labs-container">
+                <div class="lab-item">
+                    <span class="status">[IN PROGRESS]</span>
+                    <span class="name">Prompt Injection Attacks</span>
+                    <span class="progress">4.17%</span>
+                </div>
+                <div class="lab-item">
+                    <span class="status">[QUEUED]</span>
+                    <span class="name">LLM Output Attacks</span>
+                </div>
+                <div class="lab-item">
+                    <span class="status">[QUEUED]</span>
+                    <span class="name">AI Data Attacks</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
