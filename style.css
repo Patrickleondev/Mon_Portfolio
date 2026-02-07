@@ -141,6 +141,26 @@ body {
     color: var(--accent-color);
 }
 
+
+/* Language Switcher */
+.lang-switch {
+    margin-left: 20px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+}
+
+.lang-switch a {
+    text-decoration: none;
+    color: var(--dim-color);
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.lang-switch a:hover,
+.lang-switch a.active {
+    color: var(--accent-color);
+}
+
 /* Hero Section */
 .hero-section {
     min-height: 100vh;
