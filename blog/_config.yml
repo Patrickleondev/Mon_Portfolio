@@ -10,7 +10,7 @@ github_username:  Patrickleondev
 linkedin_username: patrick-léon-gandonou
 tryhackme_p: t3chwiz4rd
 htb_p: 2165503
-theme: minima
+theme: jekyll-theme-hacker
 
 # Hacker Theme Customization
 accent_color: "#00ff41"
