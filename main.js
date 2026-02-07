@@ -58,3 +58,34 @@ if (typewriter) {
 
     window.onload = type;
 }
+// Audio Context for Hover Effect (Hacker Style)
+const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+function playHoverSound() {
+    if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+    }
+    const oscillator = audioCtx.createOscillator();
+    const gainNode = audioCtx.createGain();
+
+    oscillator.type = 'sine';
+    oscillator.frequency.setValueAtTime(220, audioCtx.currentTime); // Low frequency
+    oscillator.frequency.exponentialRampToValueAtTime(800, audioCtx.currentTime + 0.1); // Zip up
+
+    gainNode.gain.setValueAtTime(0.05, audioCtx.currentTime); // Low volume
+    gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.1);
+
+    oscillator.connect(gainNode);
+    gainNode.connect(audioCtx.destination);
+
+    oscillator.start();
+    oscillator.stop(audioCtx.currentTime + 0.1);
+}
+
+// Add hover listeners to interactive cards
+document.querySelectorAll('.service-card, .project-card, .btn, a').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+        playHoverSound();
+        if (navigator.vibrate) navigator.vibrate(5); // Micro vibration
+    });
+});

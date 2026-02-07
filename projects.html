@@ -29,33 +29,78 @@
             </nav>
         </header>
 
-        <section class="section-container">
-            <h2 class="section-title">Mes Réalisations</h2>
+        <section class="section-container" id="services">
+            <h2 class="section-title">Mes Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-tilt>
+                    <div class="service-icon"><i class="fas fa-bug"></i></div>
+                    <h3>Audit & Pentesting</h3>
+                    <p>Identification des vulnérabilités web, réseau et applicatives avant qu'elles ne soient
+                        exploitées.</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI Red Teaming</h3>
+                    <p>Évaluation de la robustesse des modèles LLM contre les attaques par injection de prompt et
+                        jailbreak.</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Sécurisation Cloud</h3>
+                    <p>Durcissement des infrastructures et configurations sécurisées (Docker, Kubernetes, AWS).</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>DevSecOps</h3>
+                    <p>Intégration de la sécurité dès la conception dans les pipelines CI/CD et le cycle de
+                        développement.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container" id="realizations">
+            <h2 class="section-title">Réalisations Majeures</h2>
             <div class="projects-grid">
-                <!-- Project 1 Placeholder -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <!-- Image Placeholder -->
-                        <div class="placeholder-img">Projet 1</div>
-                    </div>
+                <!-- GuardIAn -->
+                <div class="project-card"
+                    onclick="window.open('https://github.com/Patrickleondev/Hackathon_au_Togo_IT_Days_2025_EPL_Team', '_blank')">
+                    <div class="project-status">🏆 1er Prix - IT Days 2025</div>
                     <div class="project-info">
-                        <h3>BankGPT Jailbreak</h3>
-                        <p class="project-desc">Extraction de clé secrète via Prompt Injection sur un chatbot bancaire
-                            simulé.</p>
-                        <a href="./blog/2026-02-07-bankgpt-jailbreak.html" class="btn small">Lire le Writeup</a>
+                        <h3>GuardIAn - Ransomware Defense</h3>
+                        <p class="project-desc">Système intelligent de détection et neutralisation de ransomwares basé
+                            sur l'analyse comportementale et le Machine Learning. Analyse statique/dynamique ELF/EXE,
+                            quarantaine automatique.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>ML</span><span>Cyberdefense</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 2 Placeholder -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <!-- Image Placeholder -->
-                        <div class="placeholder-img">Projet 2</div>
-                    </div>
+                <!-- SanoC -->
+                <div class="project-card"
+                    onclick="window.open('https://github.com/Patrickleondev/Projet_Final_Niveau_Avance_DCLIC', '_blank')">
+                    <div class="project-status">4ème Place - MIABE Hackathon</div>
                     <div class="project-info">
-                        <h3>Jean D'Hack CTF</h3>
-                        <p class="project-desc">Participation et résolution de challenges (Crypto, Pwn, Reverse).</p>
-                        <a href="./blog/2026-02-07-jean-dhack-ctf.html" class="btn small">Lire le Writeup</a>
+                        <h3>SanoC - Santé Numérique</h3>
+                        <p class="project-desc">Plateforme de santé communautaire pour le suivi médical : prise de RDV,
+                            dossier numérique sécurisé et géolocalisation des centres de soin.</p>
+                        <div class="tech-stack">
+                            <span>Web Dev</span><span>Data Security</span><span>UX/UI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Classification Agricole -->
+                <div class="project-card"
+                    onclick="window.open('https://github.com/Patrickleondev/Modele_de_Classification_d_Image_Agricole', '_blank')">
+                    <div class="project-status">Projet FORCE AI</div>
+                    <div class="project-info">
+                        <h3>Computer Vision Agricole</h3>
+                        <p class="project-desc">Modèle de classification d'images agricoles (+50 classes) utilisant
+                            ResNet-50 et MobileNetV2 avec une précision de 97%.</p>
+                        <div class="tech-stack">
+                            <span>Deep Learning</span><span>Computer Vision</span><span>Python</span>
+                        </div>
                     </div>
                 </div>
             </div>
