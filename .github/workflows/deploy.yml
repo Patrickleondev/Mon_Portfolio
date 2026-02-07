@@ -35,7 +35,7 @@ jobs:
           # No Gemfile.lock might exist in first push
           bundle config set --local path 'vendor/bundle'
           bundle install
-          bundle exec jekyll build --baseurl /Mon_Portfolio/blog
+          bundle exec jekyll build --baseurl /portfolio/blog
           cd ..
 
       - name: Merge Builds 📦

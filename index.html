@@ -10,69 +10,107 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@400;600;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <div id="matrix-bg"></div>
+    <div class="overlay"></div>
     <main>
         <header>
-            <div class="terminal-header">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-                <span class="title">guest@redteamer: ~</span>
-            </div>
-            <nav>
+            <nav class="glass-nav">
+                <div class="logo">Koffi Patrick-Léon G.</div>
                 <ul>
-                    <li><a href="#home">// 01. <span class="nav-text">Accueil</span></a></li>
-                    <li><a href="#about">// 02. <span class="nav-text">Bio</span></a></li>
-                    <li><a href="#certs">// 03. <span class="nav-text">Certifications</span></a></li>
-                    <li><a href="#labs">// 04. <span class="nav-text">Labs</span></a></li>
-                    <li><a href="./blog">// 05. <span class="nav-text">Blog (CTF)</span></a></li>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">Bio & Docs</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#labs">Labs</a></li>
+                    <li><a href="./blog">Blog</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section id="home" class="hero">
-            <div class="glitch-wrapper">
-                <h1 class="glitch" data-text="AI RED TEAMER">AI RED TEAMER</h1>
-            </div>
-            <p class="typewriter">> Initializing secure connection...</p>
-            <p class="subtitle">Spécialiste en Sécurité Offensive des IA | Pentester</p>
-            <div class="social-links">
-                <a href="https://tryhackme.com/p/t3chwiz4rd" target="_blank" title="TryHackMe">THM</a>
-                <a href="https://app.hackthebox.com/users/2165503" target="_blank" title="HackTheBox">HTB</a>
-                <a href="https://github.com/Patrickleondev" target="_blank" title="GitHub">GH</a>
-                <a href="https://www.linkedin.com/in/patrick-léon-gandonou/" target="_blank" title="LinkedIn">IN</a>
-                <a href="https://x.com/gkpl0010" target="_blank" title="X (Twitter)">X</a>
-            </div>
-            <div class="cta">
-                <a href="#labs" class="btn">Accéder aux Labs</a>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Hello, I am</p>
+                    <h1 class="glitch" data-text="AI Red Teamer">AI Red Teamer</h1>
+                    <h2 class="role">Pentester & Security Researcher</h2>
+                    <p class="bio-short">
+                        Passionné par la sécurisation des LLMs et l'offensive security.
+                        J'aide les organisations à anticiper les attaques adverses.
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="https://tryhackme.com/p/t3chwiz4rd" target="_blank" title="TryHackMe"><i
+                                class="fas fa-cube"></i></a>
+                        <a href="https://app.hackthebox.com/users/2165503" target="_blank" title="HackTheBox"><i
+                                class="fas fa-box-open"></i></a>
+                        <a href="https://github.com/Patrickleondev" target="_blank" title="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/patrick-léon-gandonou/" target="_blank" title="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/gkpl0010" target="_blank" title="X (Twitter)"><i
+                                class="fab fa-twitter"></i></a>
+                    </div>
+
+                    <div class="cta-group">
+                        <a href="#about" class="btn primary">Mon Parcours</a>
+                        <a href="#labs" class="btn secondary">Voir les Labs</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="image-frame">
+                        <img src="./assets/images/Professionnal_1.jpg" alt="Koffi Patrick-Léon Gandonou"
+                            class="profile-pic">
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="about">
-            <h2><span class="dim">//</span> À propos de moi</h2>
-            <div class="content">
-                <p>Passionné par la cybersécurité et les vulnérabilités de l'Intelligence Artificielle. Mon objectif est
-                    d'aider les organisations à sécuriser leurs modèles de langage (LLMs) contre les injections de
-                    prompts et autres attaques adverses.</p>
+        <section id="about" class="section-container">
+            <h2 class="section-title">À propos & Documents</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Actuellement spécialisé dans l'**AI Red Teaming**, je me concentre sur l'identification et
+                        l'exploitation des vulnérabilités dans les modèles de langage (LLMs).
+                        Mon approche combine une solide base en cybersécurité traditionnelle (Pentest Réseau/Web) avec
+                        les nouvelles techniques d'attaques adverses.
+                    </p>
+                    <p>
+                        J'ai documenté mon parcours et mes réalisations passées dans des synthèses détaillées
+                        disponibles ci-dessous.
+                    </p>
+                </div>
+                <div class="docs-downloads">
+                    <a href="./assets/cv/CV_GANDONOU_Koffi Patrick-Léon.pdf" class="doc-card" target="_blank">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Télécharger mon CV</span>
+                    </a>
+                    <a href="./assets/docs/Résumés des travaux antérieurs_GANDONOU Koffi Patrick-léon.pdf"
+                        class="doc-card" target="_blank">
+                        <i class="fas fa-folder-open"></i>
+                        <span>Résumé Travaux Antérieurs</span>
+                    </a>
+                </div>
             </div>
         </section>
 
-        <section id="expertise">
-            <h2><span class="dim">//</span> Expertise Technique & Certifications</h2>
+        <section id="expertise" class="section-container">
+            <h2 class="section-title">Expertise & Certifications</h2>
             <div class="skills-gallery">
-
+                <!-- Content same as before, styling will handle the look -->
                 <div class="expertise-card">
                     <div class="expertise-image">
                         <img src="./assets/certs/Certified_Ethical_Hacking_(v12).jpeg" alt="CEH v12">
                     </div>
                     <div class="expertise-content">
                         <h3>Sécurité Offensive (PENTEST)</h3>
-                        <p class="cert-origin">Certification : Certified Ethical Hacker (v12)</p>
+                        <p class="cert-origin">Certified Ethical Hacker (v12)</p>
                         <ul class="competencies">
                             <li>Exploitation de vulnérabilités (OWASP Top 10)</li>
                             <li>Tests d'intrusion réseaux & systèmes</li>
@@ -81,47 +119,42 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="expertise-card">
                     <div class="expertise-image">
                         <img src="./assets/certs/Advanced_Cybersecurity_Certificate.jpeg" alt="Advanced Cybersecurity">
                     </div>
                     <div class="expertise-content">
-                        <h3>Analyse de Menaces & Défense</h3>
-                        <p class="cert-origin">Certification : Advanced Cybersecurity Specialist</p>
+                        <h3>Défense & Threat Intel</h3>
+                        <p class="cert-origin">Advanced Cybersecurity</p>
                         <ul class="competencies">
-                            <li>Threat Intelligence & Chasse aux menaces (Hunting)</li>
-                            <li>Réponse aux incidents & Analyse forensic</li>
-                            <li>Sécurisation des architectures multi-tiers</li>
-                            <li>Analyse de malwares & Rétro-ingénierie</li>
+                            <li>Threat Hunting</li>
+                            <li>Forensic Analysis</li>
+                            <li>Architecture Sécurisée</li>
                         </ul>
                     </div>
                 </div>
-
                 <div class="expertise-card">
                     <div class="expertise-image">
                         <img src="./assets/certs/System_and_Network_Security_Certificate.jpeg"
                             alt="System & Network Security">
                     </div>
                     <div class="expertise-content">
-                        <h3>Sécurité Réseaux & Infrastructure</h3>
-                        <p class="cert-origin">Certification : System & Network Security Practitioner</p>
+                        <h3>Infrastructure</h3>
+                        <p class="cert-origin">Network Security Practitioner</p>
                         <ul class="competencies">
-                            <li>Hardening serveur (Linux/Windows)</li>
-                            <li>Configuration Firewalls & VPN (IPsec/SSL)</li>
-                            <li>Gestion des accès (IAM) et filtrage réseau</li>
-                            <li>Monitoring de sécurité (SIEM/SOC basics)</li>
+                            <li>Hardening Linux/Windows</li>
+                            <li>Firewalls & VPNs</li>
+                            <li>Monitoring SIEM</li>
                         </ul>
                     </div>
                 </div>
-
                 <div class="expertise-card">
                     <div class="expertise-image">
                         <img src="./assets/certs/data_analyst.jpeg" alt="Data Analyst Python">
                     </div>
                     <div class="expertise-content">
                         <h3>Data Science & Automatisation</h3>
-                        <p class="cert-origin">Certification : Data Analyst with Python</p>
+                        <p class="cert-origin">Data Analyst Python</p>
                         <ul class="competencies">
                             <li>Automatisation de scripts de sécurité en Python</li>
                             <li>Analyse de gros volumes de logs (Pandas/Numpy)</li>
@@ -130,12 +163,11 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <section id="labs">
-            <h2><span class="dim">//</span> AI RedTeaming Labs</h2>
+        <section id="labs" class="section-container">
+            <h2 class="section-title">AI RedTeaming Labs</h2>
             <div class="labs-container">
                 <div class="lab-item">
                     <span class="status">[IN PROGRESS]</span>
