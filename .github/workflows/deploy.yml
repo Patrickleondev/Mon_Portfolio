@@ -33,7 +33,7 @@ jobs:
         run: |
           cd blog
           bundle install
-          bundle exec jekyll build --baseurl /blog
+          bundle exec jekyll build --baseurl /Mon_Portfolio/blog
           cd ..
 
       - name: Merge Builds 📦
