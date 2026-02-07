@@ -158,6 +158,59 @@
                 </div>
             </div>
 
+            <!-- ISC2 Certified in Cybersecurity -->
+            <div class="cert-block">
+                <h3>ISC2 Certified in Cybersecurity (CC)</h3>
+                <section class="splide" id="splide-isc2" aria-label="ISC2 Certifications">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="expertise-card">
+                                    <div class="expertise-image" style="height: 280px;">
+                                        <img src="./assets/images/cc1.png" alt="ISC2 CC Domain 1">
+                                    </div>
+                                    <div class="expertise-content">
+                                        <h3>CC Domain 1: Security Principles</h3>
+                                        <p class="cert-origin">ISC2 (Dec 2024)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="expertise-card">
+                                    <div class="expertise-image" style="height: 280px;">
+                                        <img src="./assets/images/assess.png" alt="ISC2 CC Pre-assessment">
+                                    </div>
+                                    <div class="expertise-content">
+                                        <h3>CC Course Pre-assessment</h3>
+                                        <p class="cert-origin">ISC2 (Dec 2024)</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Hackathons & Competitions -->
+            <div class="cert-block">
+                <h3>Hackathons & Competitions</h3>
+                <div class="skills-gallery" style="grid-template-columns: 1fr;">
+                    <div class="expertise-card">
+                        <div class="expertise-image" style="height: 280px;">
+                            <img src="./assets/images/certificate_of_participation.png" alt="Cyber Kushti">
+                        </div>
+                        <div class="expertise-content">
+                            <h3>Breach:X - Cyber Kushti</h3>
+                            <p class="cert-origin">Certificate of Participation (Feb 2025)</p>
+                            <p style="color: var(--dim-color); font-size: 0.9rem; margin-top: 0.5rem;">
+                                Hackathon Cyber Kushti presented by Breach:X in collaboration with Cert-In at the
+                                National Cybersecurity Conclave 1.0
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- TryHackMe Badges -->
             <div class="cert-block">
                 <h3>TryHackMe Achievements</h3>
@@ -211,6 +264,7 @@
             // Initialize Splide Carousels
             if (document.querySelector('#splide-cisco')) new Splide('#splide-cisco', { perPage: 3, gap: '1rem', breakpoints: { 640: { perPage: 1 } } }).mount();
             if (document.querySelector('#splide-ceh')) new Splide('#splide-ceh', { perPage: 2, gap: '1rem', breakpoints: { 640: { perPage: 1 } } }).mount();
+            if (document.querySelector('#splide-isc2')) new Splide('#splide-isc2', { perPage: 2, gap: '1rem', breakpoints: { 640: { perPage: 1 } } }).mount();
         });
     </script>
 </body>
