@@ -46,7 +46,9 @@ const typeWriterElements = [
     { selector: '.greeting', delay: 0 },
     { selector: '.glitch', delay: 1000 },
     { selector: '.role', delay: 2000 },
-    { selector: '.bio-short', delay: 3500 }
+    { selector: '.bio-short', delay: 3500 },
+    { selector: '#about-title', delay: 500 },
+    { selector: '#about-hook', delay: 1500 }
 ];
 
 function typeWriter(element, text, i = 0, speed = 30) {
