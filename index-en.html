@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI RedTeamer | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of GANDONOU Koffi Patrick-Léon - AI RedTeaming Specialist & CyberSecurity">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .lang-switch {
+            margin-left: 20px;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+        }
+
+        .lang-switch a {
+            text-decoration: none;
+            color: var(--dim-color);
+            margin: 0 5px;
+            transition: color 0.3s;
+        }
+
+        .lang-switch a:hover,
+        .lang-switch a.active {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="matrix-bg"></div>
+    <div class="overlay"></div>
+    <main>
+        <header>
+            <nav class="glass-nav">
+                <div class="logo">Koffi Patrick-Léon G.</div>
+                <ul>
+                    <li><a href="./index-en.html" class="active">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./expertise.html">Expertise</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./blog/">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li class="lang-switch">
+                        <a href="./index.html">FR</a> | <a href="./index-en.html" class="active">EN</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home" class="hero-section full-height">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting" style="visibility: hidden;">Koffi Patrick-Léon GANDONOU</p>
+                    <h1 class="glitch" data-text="Computer Systems Engineer" style="visibility: hidden;">
+                        Computer Systems Engineer</h1>
+                    <h2 class="role" style="visibility: hidden;">Aspiring AI Red Teamer • Security Researcher • Ethical
+                        Security Specialist</h2>
+                    <p class="bio-short" style="visibility: hidden;">
+                        Securing today, anticipating tomorrow.<br>
+                        Systems Engineering, Cybersecurity, and Artificial Intelligence at the core of my journey.
+                    </p>
+
+                    <div class="cta-group">
+                        <a href="./about.html" class="btn primary">My Journey</a>
+                        <a href="./projects.html" class="btn secondary">My Projects</a>
+                    </div>
+                </div>
+                <!-- Hero Image is now on the right -->
+                <div class="hero-image-container">
+                    <div class="image-frame">
+                        <img src="./assets/images/Professionnal_1.jpg" alt="Koffi Patrick-Léon Gandonou"
+                            class="profile-pic">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
