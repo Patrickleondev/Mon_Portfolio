@@ -6,7 +6,7 @@ description: Explore technical writeups and deep dives into AI RedTeaming and Cy
 remote_theme: cotes2020/jekyll-theme-chirpy
 
 author:
-  name: t3chw1z4rd
+  name: Koffi Patrick-Léon GANDONOU
   twitter: gkpl0010
   github: Patrickleondev
 
@@ -44,8 +44,20 @@ kramdown:
   syntax_highlighter: rouge
 
 # Chirpy settings
-lang: en-US
+lang: fr-FR
 timezone: UTC
+
+# Sidebar
+tabs:
+  - title: Archives
+    url: /archives/
+    icon: fas fa-archive
+  - title: Categories
+    url: /categories/
+    icon: fas fa-stream
+  - title: Tags
+    url: /tags/
+    icon: fas fa-tags
 
 # Build settings
 exclude:
