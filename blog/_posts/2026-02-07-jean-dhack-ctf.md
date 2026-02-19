@@ -2,8 +2,8 @@
 layout: post
 title:  "Participation au Jean D'Hack CTF 2026"
 date:   2026-02-01 10:00:00 +0100
-categories: ctf participation
-tag: crypto reverse pwn
+categories: [CTF, Participation]
+tags: [crypto, reverse, pwn, jean dhack]
 ---
 
 ## Résumé du CTF

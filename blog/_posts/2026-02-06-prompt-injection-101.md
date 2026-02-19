@@ -2,7 +2,8 @@
 layout: post
 title:  "Premier Writeup : Prompt Injection 101"
 date:   2026-02-06 23:00:00 +0000
-categories: ctf ai-redteaming
+categories: [AI RedTeaming, Basics]
+tags: [prompt injection, llm]
 ---
 
 ## Introduction

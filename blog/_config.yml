@@ -1,24 +1,50 @@
 title: RedTeamer Blog
-author: Koffi Patrick-Léon GANDONOU
-description: Writeups CTF & AI RedTeaming Labs
-baseurl: "/portfolio/blog" # the subpath of your site, e.g. /blog
-url: "https://patrickleondev.github.io" # the base hostname & protocol for your site
+tagline: Writeups CTF & AI RedTeaming Labs
+description: Explore technical writeups and deep dives into AI RedTeaming and Cyber Security.
+
+# Theme source: https://github.com/cotes2020/jekyll-theme-chirpy
+theme: jekyll-theme-chirpy
+
+author:
+  name: Koffi Patrick-Léon GANDONOU
+  twitter: gkpl0010
+  github: Patrickleondev
+
+url: "https://patrickleondev.github.io"
+baseurl: "/portfolio/blog"
 
 # Social Links
-twitter_username: gkpl0010
-github_username:  Patrickleondev
-linkedin_username: patrick-léon-gandonou
-tryhackme_p: t3chwiz4rd
-htb_p: 2165503
-theme: jekyll-theme-hacker
+social:
+  name: Koffi Patrick-Léon GANDONOU
+  links:
+    - https://github.com/Patrickleondev
+    - https://twitter.com/gkpl0010
+    - https://www.linkedin.com/in/patrick-léon-gandonou
 
-# Hacker Theme Customization
-accent_color: "#00ff41"
-background_color: "#0d0208"
+# Jekyll plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-archives
+  - jekyll-include-cache
 
-# Markdown processor
+# Pagination settings
+paginate: 10
+paginate_path: /page:num/
+
+# Markdown Settings
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Chirpy settings
+lang: en-US
+timezone: UTC
 
 # Build settings
 exclude:
@@ -27,3 +53,17 @@ exclude:
   - vendor
   - .github
   - Dockerfile
+  - README.md
+  - LICENSE
+  - "*.sh"
+  - node_modules
+
+# Archive settings (for tags and categories)
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/

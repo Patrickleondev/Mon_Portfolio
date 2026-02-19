@@ -2,8 +2,8 @@
 layout: post
 title:  "AI RedTeaming : Jailbreaking BankGPT"
 date:   2026-02-07 00:15:00 +0100
-categories: ai-redteaming labs
-tag: prompt-injection jailbreak
+categories: [AI RedTeaming, Labs]
+tags: [prompt-injection, jailbreak, tryhackme]
 ---
 
 ## Introduction
