@@ -3,10 +3,10 @@ tagline: Writeups CTF & AI RedTeaming Labs
 description: Explore technical writeups and deep dives into AI RedTeaming and Cyber Security.
 
 # Theme source: https://github.com/cotes2020/jekyll-theme-chirpy
-theme: jekyll-theme-chirpy
+remote_theme: cotes2020/jekyll-theme-chirpy
 
 author:
-  name: Koffi Patrick-Léon GANDONOU
+  name: t3chw1z4rd
   twitter: gkpl0010
   github: Patrickleondev
 
@@ -30,6 +30,7 @@ plugins:
   - jekyll-feed
   - jekyll-archives
   - jekyll-include-cache
+  - jekyll-remote-theme
 
 # Pagination settings
 paginate: 10
