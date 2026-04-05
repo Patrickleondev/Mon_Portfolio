@@ -31,14 +31,14 @@ panel:
 copyright:
   # Shown at the bottom of the post
   license:
-    template: "Cet article est sous licence :LICENSE_NAME par <a href=\"https://www.linkedin.com/in/patrick-léon-gandonou\" target=\"_blank\">t3w1z4rd</a>."
+    template: "Cet article est sous licence :LICENSE_NAME par <a href=\"https://www.linkedin.com/in/patrick-léon-gandonou\" target=\"_blank\">t3chw1z4rd</a>."
     name: CC BY 4.0
     link: https://creativecommons.org/licenses/by/4.0/
   # Displayed in the footer
   brief: Certains droits réservés.
   verbose: >-
     Sauf mention contraire, les articles de ce site sont publiés sous
-    la licence Creative Commons Attribution 4.0 International (CC BY 4.0) par t3w1z4rd.
+    la licence Creative Commons Attribution 4.0 International (CC BY 4.0) par t3chw1z4rd.
 
 meta: Propulsé par :PLATFORM avec le thème :THEME
 

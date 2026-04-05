@@ -25,11 +25,11 @@ toc: false
 
 ---
 
-![Plateforme Jean D'Hack CTF 2026](/portfolio/blog/assets/img/posts/ctf/jean-overview-1.jpeg)
+![Plateforme Jean D'Hack CTF 2026](/assets/img/posts/ctf/jean-overview-1.jpeg)
 _Jean D'Hack CTF 2026 — plateforme_
 
-![Scoreboard](/portfolio/blog/assets/img/posts/ctf/jean-overview-2.jpeg)
+![Scoreboard](/assets/img/posts/ctf/jean-overview-2.jpeg)
 _Scoreboard_
 
-![Interface CTF](/portfolio/blog/assets/img/posts/ctf/jean-overview-3.jpeg)
+![Interface CTF](/assets/img/posts/ctf/jean-overview-3.jpeg)
 _Interface CTF_
