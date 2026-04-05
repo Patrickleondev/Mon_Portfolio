@@ -43,7 +43,8 @@ jobs:
           JEKYLL_ENV=production bundle exec jekyll build \
             --source . \
             --destination _site \
-            --baseurl /portfolio/blog
+            --baseurl /portfolio/blog \
+            --trace
           cd ..
 
       - name: Merge Builds 📦

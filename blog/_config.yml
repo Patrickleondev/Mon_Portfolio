@@ -44,6 +44,8 @@ kramdown:
 # Chirpy settings
 lang: fr-FR
 timezone: UTC
+avatar: ''
+theme_mode: dark
 
 sass:
   style: compressed

@@ -1,105 +1,73 @@
-# Guide Complet de Rédaction (Chirpy Blog)
+# Guide de Redaction Pro (Blog)
 
-Ce guide vous explique comment tirer le meilleur parti de votre blog Chirpy pour vos writeups CTF, articles de recherche et labs d'IA.
+Ce guide sert de standard editorial pour publier des articles techniques et writeups CTF de maniere claire, credible et lisible.
 
----
-
-## 1. Création d'un article
-
-Utilisez le script Python pour générer le fichier avec les métadonnées correctes :
+## 1) Creation rapide d'un post
 
 ```bash
-python new_post.py "Titre de l'Article" "Catégorie Principale, Sous-Catégorie" "tag1, tag2"
+python new_post.py "Titre" "Categorie1, Categorie2" "tag1, tag2"
 ```
 
----
-
-## 2. Métadonnées (Front Matter)
-
-Le haut de votre fichier `.md` contrôle le comportement du thème :
+## 2) Front Matter recommande
 
 ```yaml
 ---
 layout: post
-title: "Mon Readup CTF"
-date: 2026-02-19 10:00:00 +0000
-categories: [CTF, Web]       # Toujours mettre entre crochets []
-tags: [sql-injection, xss]   # Toujours mettre entre crochets []
-pin: true                     # Pour épingler l'article en haut de la page d'accueil
-toc: true                     # Afficher la table des matières (activé par défaut)
+title: "Titre de l'article"
+date: 2026-04-05 10:00:00 +0000
+categories: [CTF, Web]
+tags: [xss, auth, hardening]
+toc: true
+image:
+    path: /portfolio/blog/assets/img/posts/ctf/cover.png
+    alt: Capture principale de l'analyse
 ---
 ```
 
----
-
-## 3. Liens et Fichiers
-
-### Liens Externes
-Utilisez la syntaxe Markdown standard pour l'accessibilité :
-- **TryHackMe** : `[Lab BankGPT](https://tryhackme.com/jr/bankgpt)`
-- **GitHub** : `[Code Source](https://github.com/Patrickleondev/repo)`
-
-### Fichiers Téléchargeables (Solve Scripts, Binaires)
-Si vous voulez partager un script de résolution ou un fichier PDF :
-1. Placez le fichier dans `assets/files/`.
-2. Créez un lien dans l'article :
-   ```markdown
-   [Télécharger le script de solve (Python)](/portfolio/blog/assets/files/solve.py)
-   ```
-
----
-
-## 4. Images et Captures d'écran
-
-Placez vos images dans `assets/img/posts/`.
-```markdown
-![Capture d'écran de l'exploit](/portfolio/blog/assets/img/posts/exploit.png)
-```
-*Astuce : Chirpy supporte le zoom au clic sur les images !*
-
----
-
-## 5. Blocs de Code et Alertes
-
-### Blocs de code (Syntax Highlighting)
-```python
-def pwn():
-    print("Flag found!")
-```
-
-### Alertes Spéciales (Chirpy)
-> [!TIP]
-> Utilisez cette alerte pour des astuces ou des raccourcis.
-
-> [!WARNING]
-> Utilisez celle-ci pour des avertissements de sécurité.
-
----
-
-## 6. Structure Recommandée pour un CTF
-
-Voici un exemple de structure pour un writeup :
+## 3) Structure standard d'un article technique
 
 ```markdown
-## 🕵️ Reconnaissance
-Analyse des ports et services... (ex: `nmap -sV target`)
-
-## 🚀 Exploitation
-Description de la vulnérabilité et charge utile utilisée.
-
-## 🚩 Flag
-`CTF{Success_Is_Earned}`
-
-## 💡 Leçons apprises
-Ce que ce challenge m'a enseigné.
+## Contexte
+## Objectif
+## Methodologie
+## Resultats / Observations
+## Impact (business ou securite)
+## Remediation / Bonnes pratiques
+## Conclusion
 ```
 
----
+## 4) Structure standard d'un writeup CTF
 
-## 7. Prévisualisation locale
+```markdown
+## Contexte du challenge
+## Triage et hypotheses
+## Analyse
+## Resolution
+## Lessons learned
+```
 
-Si vous voulez voir le résultat avant de publier :
+## 5) Assets et liens
+
+- Images: placer dans `assets/img/posts/...`
+- Fichiers: placer dans `assets/files/...`
+- Toujours utiliser des chemins absolus compatibles GitHub Pages:
+
+```markdown
+![preuve](/portfolio/blog/assets/img/posts/future-interns/zap-dashboard.png)
+[Script](/portfolio/blog/assets/files/solve.py)
+```
+
+## 6) Regles qualite
+
+- Un article = une idee principale
+- Preuves visuelles quand possible
+- Eviter les blocs trop longs, preferer des sections courtes
+- Toujours terminer avec un plan d'action ou une lecon
+
+## 7) Preview locale
+
 ```bash
-bundle exec jekyll serve
+bundle exec jekyll serve --baseurl /portfolio/blog
 ```
-Puis ouvrez : `http://127.0.0.1:4000/portfolio/blog/`
+
+Ouvrir: `http://127.0.0.1:4000/portfolio/blog/`

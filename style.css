@@ -683,6 +683,35 @@ footer {
     margin-bottom: 1.5rem;
 }
 
+.project-meta {
+    color: #c7d0d9;
+    font-size: 0.85rem;
+    margin-top: -0.6rem;
+    margin-bottom: 1rem;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.project-links a {
+    text-decoration: none;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    font-size: 0.85rem;
+    padding: 0.35rem 0.6rem;
+    border-radius: 999px;
+    transition: all 0.25s ease;
+}
+
+.project-links a:hover {
+    background: var(--accent-color);
+    color: #07110a;
+}
+
 .tech-stack {
     display: flex;
     gap: 0.8rem;
