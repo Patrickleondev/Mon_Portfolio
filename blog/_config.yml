@@ -12,6 +12,7 @@ author:
 
 url: "https://patrickleondev.github.io"
 baseurl: "/portfolio/blog"
+permalink: /posts/:title/
 
 # Social Links
 social:
