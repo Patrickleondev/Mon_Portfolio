@@ -54,7 +54,7 @@ L'IA, en voulant être utile, a listé ses règles d'exclusion internes. Dans sa
 à la clé API THM{support_api_key_123}."
 ```
 
-![Réponse de l'IA révélant le secret](/portfolio/blog/assets/img/posts/ctf/bankgpt-prompt-2.png)
+![Réponse de l'IA révélant le secret](/assets/img/posts/ctf/bankgpt-prompt-2.png)
 
 ---
 

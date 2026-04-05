@@ -1,5 +1,5 @@
-title: RedTeamer Blog
-tagline: Writeups CTF & AI RedTeaming Labs
+title: t3chw1z4rd's Blog
+tagline: Pentester · Aspiring AI RedTeamer
 description: Explore technical writeups and deep dives into AI RedTeaming and Cyber Security.
 
 theme: jekyll-theme-chirpy
@@ -14,11 +14,11 @@ baseurl: "/portfolio/blog"
 
 # Social Links
 social:
-  name: T3chW1zard
+  name: t3w1z4rd
   links:
+    - https://www.linkedin.com/in/patrick-léon-gandonou
     - https://github.com/Patrickleondev
     - https://twitter.com/gkpl0010
-    - https://www.linkedin.com/in/patrick-léon-gandonou
 
 # Jekyll plugins
 plugins:
@@ -60,6 +60,12 @@ exclude:
   - LICENSE
   - "*.sh"
   - node_modules
+
+# Jekyll Collections — required by Chirpy for sidebar tabs
+collections:
+  tabs:
+    output: true
+    sort_by: order
 
 # Archive settings (for tags and categories)
 jekyll-archives:
