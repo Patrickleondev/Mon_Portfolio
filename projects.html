@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projets | AI RedTeamer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="module" crossorigin src="/portfolio/assets/style-DbcOQzhP.js"></script>
+  <script type="module" crossorigin src="/portfolio/assets/main-DgHRvZWY.js"></script>
+  <link rel="stylesheet" crossorigin href="/portfolio/assets/style-CfrD5w_K.css">
+</head>
+
+<body>
+    <div id="matrix-bg"></div>
+    <div class="overlay"></div>
+    <main>
+        <header>
+            <nav class="glass-nav">
+                <div class="logo">Koffi Patrick-Léon GANDONOU</div>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./about.html">A Propos</a></li>
+                    <li><a href="./expertise.html">Expertise</a></li>
+                    <li><a href="./projects.html" class="active">Projets</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./blog/">Blog</a></li>
+                    <li class="lang-switch">
+                        <a href="./projects.html" class="active">FR</a> | <a href="./projects-en.html">EN</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section-container" id="services">
+            <h2 class="section-title" id="services-title" style="visibility: hidden;">Mes Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-tilt>
+                    <div class="service-icon"><i class="fas fa-bug"></i></div>
+                    <h3>Audit & Pentesting</h3>
+                    <p>Identification des vulnérabilités web, réseau et applicatives avant qu'elles ne soient
+                        exploitées.</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI Red Teaming</h3>
+                    <p>Évaluation de la robustesse des modèles LLM contre les attaques par injection de prompt et
+                        jailbreak.</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Sécurisation Cloud</h3>
+                    <p>Durcissement des infrastructures et configurations sécurisées (Docker, Kubernetes, AWS).</p>
+                </div>
+                <div class="service-card" data-tilt>
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>DevSecOps</h3>
+                    <p>Intégration de la sécurité dès la conception dans les pipelines CI/CD et le cycle de
+                        développement.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container" id="realizations">
+            <h2 class="section-title" id="realizations-title" style="visibility: hidden;">Réalisations Majeures</h2>
+            <div class="projects-grid">
+                <!-- GuardIAn -->
+                <div class="project-card"
+                    onclick="window.open('https://github.com/Patrickleondev/Hackathon_au_Togo_IT_Days_2025_EPL_Team', '_blank')">
+                    <div class="project-status"><i class="fas fa-trophy" style="color: gold;"></i> 1er Prix - Togo IT
+                        Days 2025</div>
+                    <div class="project-info">
+                        <h3>GuardIAn - Ransomware Defense</h3>
+                        <p class="project-desc">Système intelligent de détection et neutralisation de ransomwares basé
+                            sur l'analyse du kill chain et des comportements malveillants. Analyse statique/dynamique
+                            d'exécutables (ELF, EXE/DLL, macOS), détection de signatures suspectes, identification et
+                            neutralisation de processus malveillants avec quarantaine automatique. Intégration de
+                            modèles Hugging Face et ML traditionnel pour réduire les faux positifs.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>ML/AI</span><span>Hugging Face</span><span>Network Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SanoC -->
+                <div class="project-card"
+                    onclick="window.open('https://github.com/Patrickleondev/Projet_Final_Niveau_Avance_DCLIC', '_blank')">
+                    <div class="project-status"><i class="fas fa-medal" style="color: #cd7f32;"></i> 4ème Place
+                        Nationale - MIABE Hackathon (16 pays)</div>
+                    <div class="project-info">
+                        <h3>SanoC - Santé Numérique</h3>
+                        <p class="project-desc">Plateforme numérique de santé communautaire : prise de rendez-vous
+                            médicaux, rappels automatiques de médicaments (notifications), dossier médical numérique
+                            sécurisé (allergies, groupe sanguin, historique), géolocalisation des centres de santé.
+                            Contribution à la conception fonctionnelle et technique avec attention portée à la sécurité
+                            des données médicales.</p>
+                        <div class="tech-stack">
+                            <span>Flutter</span><span>Mobile Dev</span><span>Data Security</span><span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AgriVision -->
+                <div class="project-card"
+                    onclick="window.open('https://github.com/Patrickleondev/Modele_de_Classification_d_Image_Agricole', '_blank')">
+                    <div class="project-status"><i class="fas fa-check-circle" style="color: var(--accent-color);"></i>
+                        Projet Final FORCE-N (97% Accuracy)</div>
+                    <div class="project-info">
+                        <h3>AgriVision - Computer Vision</h3>
+                        <p class="project-desc">Modèle de vision par ordinateur pour la classification d'images
+                            agricoles (+50 classes). Utilisation de ResNet-50 et MobileNetV2 avec approches de ML et
+                            Deep Learning. Prétraitement des données, entraînement du modèle et analyse des
+                            performances. Précision finale : 97%.</p>
+                        <div class="tech-stack">
+                            <span>Python</span><span>TensorFlow</span><span>ResNet-50</span><span>MobileNetV2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container" id="internship">
+            <h2 class="section-title">Stage Future Interns 2026</h2>
+            <div class="projects-grid">
+                <article class="project-card"
+                    onclick="window.open('https://github.com/Patrickleondev/FUTURE_CS_01', '_blank')">
+                    <div class="project-status"><i class="fas fa-briefcase"></i> Mission 1 - VAPT Web</div>
+                    <div class="project-info">
+                        <h3>Assessment Altoro Mutual</h3>
+                        <p class="project-desc">Évaluation passive de vulnérabilités avec Nmap, WhatWeb, Nikto et
+                            OWASP ZAP. Restitution orientée risque métier avec plan de remédiation priorisé.</p>
+                        <p class="project-meta">Livrables: rapport VAPT, preuves techniques, méthodologie pas à pas.</p>
+                        <div class="tech-stack">
+                            <span>Nmap</span><span>Nikto</span><span>OWASP ZAP</span><span>Reporting</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card"
+                    onclick="window.open('https://github.com/Patrickleondev/FUTURE_CS_02', '_blank')">
+                    <div class="project-status"><i class="fas fa-envelope-open-text"></i> Mission 2 - Phishing</div>
+                    <div class="project-info">
+                        <h3>Phishing Detection & Awareness</h3>
+                        <p class="project-desc">Analyse de 3 scénarios (credential phishing, BEC, spear phishing)
+                            avec classification des risques et guide de sensibilisation pour collaborateurs.</p>
+                        <p class="project-meta">Livrables: rapport awareness, matrice de red flags, recommandations
+                            opérationnelles.</p>
+                        <div class="tech-stack">
+                            <span>Email Analysis</span><span>BEC</span><span>Awareness</span><span>Risk Communication</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card"
+                    onclick="window.open('https://github.com/Patrickleondev/FUTURE_CS_03', '_blank')">
+                    <div class="project-status"><i class="fas fa-plug"></i> Mission 3 - API Security</div>
+                    <div class="project-info">
+                        <h3>VAmPI API Risk Analysis</h3>
+                        <p class="project-desc">Tests manuels des risques OWASP API (BOLA, BFLA, excessive data
+                            exposure) avec preuve d’impact et stratégie de durcissement orientée Zero Trust.</p>
+                        <p class="project-meta">Livrables: rapport API, captures Postman, script d'automatisation.</p>
+                        <div class="tech-stack">
+                            <span>OWASP API Top 10</span><span>Postman</span><span>Python</span><span>Docker</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-container" id="publications">
+            <h2 class="section-title">Blog & Writeups</h2>
+            <div class="projects-grid">
+                <article class="project-card" onclick="window.open('./blog/writeups/', '_blank')">
+                    <div class="project-status"><i class="fas fa-pen-nib"></i> Nouvelle Structure Éditoriale</div>
+                    <div class="project-info">
+                        <h3>Section Writeups</h3>
+                        <p class="project-desc">Organisation claire pour publier des articles techniques, analyses de
+                            risques, et writeups CTF de manière professionnelle.</p>
+                        <div class="project-links">
+                            <a href="./blog/writeups/" target="_blank" onclick="event.stopPropagation()">Voir la section</a>
+                            <a href="./blog/internship/" target="_blank" onclick="event.stopPropagation()">Voir les missions de stage</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Global Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="social-icons-footer">
+                    <a href="https://tryhackme.com/p/t3chwiz4rd" target="_blank" title="TryHackMe">
+                        <img src="https://simpleicons.org/icons/tryhackme.svg" alt="TryHackMe" class="icon-svg">
+                    </a>
+                    <a href="https://app.hackthebox.com/users/2165503" target="_blank" title="HackTheBox">
+                        <img src="https://simpleicons.org/icons/hackthebox.svg" alt="HackTheBox" class="icon-svg">
+                    </a>
+                    <a href="https://github.com/Patrickleondev" target="_blank" title="GitHub">
+                        <img src="https://simpleicons.org/icons/github.svg" alt="GitHub" class="icon-svg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/patrick-léon-gandonou/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin icon-svg"
+                            style="font-size: 24px; display: flex; align-items: center; justify-content: center;"></i>
+                    </a>
+                    <a href="https://x.com/gkpl0010" target="_blank" title="X (Twitter)">
+                        <img src="https://simpleicons.org/icons/x.svg" alt="X" class="icon-svg">
+                    </a>
+                </div>
+                <div class="contact-info"
+                    style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                    <a href="https://wa.me/22893035706" target="_blank" class="whatsapp-btn">
+                        <img src="https://simpleicons.org/icons/whatsapp.svg" alt="WhatsApp" class="icon-svg-small">
+                        Contact via WhatsApp
+                    </a>
+                    <a href="mailto:gandonoupatrickleon@gmail.com" class="email-icon" title="Email">
+                        <i class="fas fa-envelope icon-svg" style="font-size: 24px;"></i>
+                    </a>
+                </div>
+                <p class="copyright">© 2026 Koffi Patrick-Léon Gandonou. Built for AI Security.</p>
+            </div>
+        </footer>
+
+
+    </main>
+</body>
+
+</html>
