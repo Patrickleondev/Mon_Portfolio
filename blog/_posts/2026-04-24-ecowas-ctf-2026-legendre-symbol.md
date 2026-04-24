@@ -12,6 +12,14 @@ toc: true
 
 ---
 
+## Fichiers du challenge
+
+| Fichier | Télécharger |
+|---------|-------------|
+| `output.txt` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/38_legendre_output.txt) |
+
+---
+
 ## Description
 
 > *"1797 — une date qui compte."* Un générateur pseudo-aléatoire basé sur le symbole de Legendre chiffre le flag bit à bit.

@@ -16,7 +16,7 @@ toc: true
 
 | Fichier | Télécharger |
 |---------|-------------|
-| `5_friends_challenge.json` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/86_5_friends.json) |
+| `output.txt` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/86_5friends_output.txt) |
 
 ## Description
 

@@ -12,6 +12,14 @@ toc: true
 
 ---
 
+## Fichiers du challenge
+
+| Fichier | Télécharger |
+|---------|-------------|
+| `output.txt` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/39_emergency_output.txt) |
+
+---
+
 ## Description
 
 Un message d'urgence en caractères CJK. Le nom du challenge est votre meilleur indice.

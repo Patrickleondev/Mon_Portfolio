@@ -16,7 +16,7 @@ toc: true
 
 | Fichier | Télécharger |
 |---------|-------------|
-| `dogon_nonce.json` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/56_dogon_nonce.json) |
+| `signatures.json.txt` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/56_dogon_nonce_signatures.txt) |
 
 ## Description du challenge
 

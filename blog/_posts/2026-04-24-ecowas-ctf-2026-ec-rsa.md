@@ -16,7 +16,7 @@ toc: true
 
 | Fichier | Télécharger |
 |---------|-------------|
-| `ec_rsa_challenge.json` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/91_ec_rsa.json) |
+| `output.txt` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/91_ecrsa_output.txt) |
 
 ## Description du challenge
 
