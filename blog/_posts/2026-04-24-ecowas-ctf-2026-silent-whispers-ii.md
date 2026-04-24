@@ -75,7 +75,7 @@ cat flag.txt
 
 ## Flag
 
-```
+```text
 flag{l@y37s_0n_l@y3rs}
 ```
 

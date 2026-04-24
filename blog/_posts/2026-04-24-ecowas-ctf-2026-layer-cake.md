@@ -57,7 +57,7 @@ print(step3.decode())
 
 ## Flag
 
-```
+```text
 EcowasCTF{l4y3r_by_l4y3r_sw33t}
 ```
 

@@ -14,6 +14,8 @@ toc: true
 
 ## Fichiers du challenge
 
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+
 | Fichier | Télécharger |
 |---------|-------------|
 | `Abidjan.pcap` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/24_abidjan.pcap) |
@@ -55,7 +57,7 @@ L'adresse MAC qui ressort avec le plus de réponses ARP non sollicitées est l'a
 
 ## Flag
 
-```
+```text
 EcowasCTF{00:11:22:33:44:55}
 ```
 

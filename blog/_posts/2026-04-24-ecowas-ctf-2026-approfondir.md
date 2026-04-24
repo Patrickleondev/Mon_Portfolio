@@ -34,7 +34,7 @@ La phrase de trois mots est une adresse **what3words** — un système qui divis
 
 ### Étape 1 — Résoudre l'adresse what3words
 
-```
+```text
 https://what3words.com/afterschool.buffets.rebuffed
 ```
 
@@ -68,7 +68,7 @@ print(decimal_to_dms(lon, False))  # 7°31′30″E
 
 ## Flag
 
-```
+```text
 EcowasCTF{9°2′31″N 7°31′30″E}
 ```
 

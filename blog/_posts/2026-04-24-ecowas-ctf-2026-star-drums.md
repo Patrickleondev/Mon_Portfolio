@@ -14,6 +14,8 @@ toc: true
 
 ## Fichiers du challenge
 
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+
 | Fichier | Télécharger |
 |---------|-------------|
 | `star_drums.wav` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/60_star_drums.wav) |
@@ -124,7 +126,7 @@ print(f"[+] Flag: {flag}")
 
 ## Flag
 
-```
+```text
 EcowasCTF{s4h3l_dr4ms_m0rs3_b64_r0t13}
 ```
 

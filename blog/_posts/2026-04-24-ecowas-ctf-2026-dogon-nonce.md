@@ -14,6 +14,8 @@ toc: true
 
 ## Fichiers du challenge
 
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+
 | Fichier | Télécharger |
 |---------|-------------|
 | `signatures.json.txt` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/56_dogon_nonce_signatures.txt) |
@@ -156,7 +158,7 @@ for row in L:
 
 ## Flag
 
-```
+```text
 EcowasCTF{h1dd3n_numb3r_pr0bl3m_sh4k3s_th3_3ld3r}
 ```
 

@@ -14,6 +14,8 @@ toc: true
 
 ## Fichiers du challenge
 
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+
 | Fichier | Télécharger |
 |---------|-------------|
 | `adinkra.zip` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/35_adinkra.zip) |
@@ -66,7 +68,7 @@ Le message en clair est une référence directe à **Gye Nyame** ("Except God"),
 
 ## Flag
 
-```
+```text
 EcowasCTF{gx3_ny4m3_3xc3pt_g0d}
 ```
 

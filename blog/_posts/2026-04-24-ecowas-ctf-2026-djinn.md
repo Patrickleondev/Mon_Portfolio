@@ -14,6 +14,8 @@ toc: true
 
 ## Fichiers du challenge
 
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+
 | Fichier | Télécharger |
 |---------|-------------|
 | `djinn.zip` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/49_djinn.zip) |
@@ -88,7 +90,7 @@ print(bytes(flag_bytes).decode())
 
 ## Flag
 
-```
+```text
 EcowasCTF{Dj1nN_5t4t3_mAcH1n3_0xD34D}
 ```
 

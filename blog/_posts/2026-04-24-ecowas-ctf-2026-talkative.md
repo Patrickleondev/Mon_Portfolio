@@ -81,7 +81,7 @@ Résultat : `DRUMS THAT TALK ACROSS THE SAVANNAH`
 
 ## Flag
 
-```
+```text
 EcowasCTF{DRUMS_THAT_TALK_ACROSS_THE_SAVANNAH}
 ```
 

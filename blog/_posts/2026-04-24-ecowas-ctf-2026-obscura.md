@@ -14,6 +14,8 @@ toc: true
 
 ## Fichiers du challenge
 
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+
 | Fichier | Télécharger |
 |---------|-------------|
 | `Obscura.apk.zip` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/89_obscura.apk.zip) |
@@ -109,7 +111,7 @@ curl -s -X POST http://labs.ecowasctf.com.gh:5003/login \
 
 ## Flag
 
-```
+```text
 EcowasCTF{h4rdc0d3d_m0b1l3_xpl0it}
 ```
 

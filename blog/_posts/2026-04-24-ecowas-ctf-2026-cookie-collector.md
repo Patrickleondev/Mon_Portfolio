@@ -54,7 +54,7 @@ Réponse : flag directement dans le corps de la réponse.
 
 ## Flag
 
-```
+```text
 EcowasCTF{c00kie_c0llect0r_m@st3R>!}
 ```
 

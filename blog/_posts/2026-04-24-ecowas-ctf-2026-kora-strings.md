@@ -14,6 +14,8 @@ toc: true
 
 ## Fichiers du challenge
 
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+
 | Fichier | Télécharger |
 |---------|-------------|
 | `kora.wav` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/59_kora.wav) |
@@ -91,7 +93,7 @@ print(f"Flag: {flag.decode()}")
 
 ## Flag
 
-```
+```text
 EcowasCTF{mdr}
 ```
 

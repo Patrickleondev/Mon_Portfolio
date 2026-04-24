@@ -77,7 +77,7 @@ print(bytes.fromhex(hex(m)[2:]).decode())
 
 ## Flag
 
-```
+```text
 EcowasCTF{cub3_r00t_n0_p4dd1ng_ez}
 ```
 

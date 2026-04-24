@@ -66,7 +66,7 @@ curl http://challenge-url/portal → 403 + messages d'erreur révélateurs
 
 ## Flag
 
-```
+```text
 EcowasCTF{h34d3rs_sp00f3d_dipl0m@t_@ccess}
 ```
 

@@ -78,7 +78,7 @@ curl http://challenge-url/admin-panel
 
 ## Flag
 
-```
+```text
 EcowasCTF{st@ge_m@ster!!}
 ```
 

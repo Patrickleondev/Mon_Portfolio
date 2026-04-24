@@ -92,7 +92,7 @@ sage solve.sage
 
 ## Flag
 
-```
+```text
 EcowasCTF{c0pp3rsm1th_f1nds_th3_nil3_s0urce}
 ```
 

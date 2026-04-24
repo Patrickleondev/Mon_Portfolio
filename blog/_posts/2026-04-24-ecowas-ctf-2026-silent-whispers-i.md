@@ -41,7 +41,7 @@ Sortie directe sans mot de passe → flag.
 
 ## Flag
 
-```
+```text
 EcowasCTF{wh1t3sp4c3_s3cr3ts_h1dd3n}
 ```
 

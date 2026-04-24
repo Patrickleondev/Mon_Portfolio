@@ -14,6 +14,8 @@ toc: true
 
 ## Fichiers du challenge
 
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+
 | Fichier | Télécharger |
 |---------|-------------|
 | `output.txt` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/38_legendre_output.txt) |
@@ -101,7 +103,7 @@ print(''.join(chars))
 
 ## Flag
 
-```
+```text
 EcowasCTF{p4tterns_1n_re5idu3s_85e5ae3583}
 ```
 

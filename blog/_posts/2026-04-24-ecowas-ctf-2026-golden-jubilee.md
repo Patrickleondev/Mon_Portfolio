@@ -38,7 +38,7 @@ Résultat : première capture le **2001-02-02** sur `http://www.ecowas.int/`
 
 ### Étape 2 — Accéder à la capture archivée
 
-```
+```text
 https://web.archive.org/web/20010202000000*/http://www.ecowas.int/
 ```
 
@@ -65,7 +65,7 @@ curl -I "https://web.archive.org/web/20010426094324/http://www.ecowas.int/"
 
 ## Flag
 
-```
+```text
 EcowasCTF{Thursday, 26-Apr-2001 09:43:24 GMT}
 ```
 

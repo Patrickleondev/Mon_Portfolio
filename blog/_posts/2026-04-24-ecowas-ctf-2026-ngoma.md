@@ -14,6 +14,8 @@ toc: true
 
 ## Fichiers du challenge
 
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+
 | Fichier | Télécharger |
 |---------|-------------|
 | `ngoma.zip` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/34_ngoma.zip) |
@@ -70,7 +72,7 @@ Le bytecode décodé contient la clé AES et les données chiffrées. L'AES opè
 
 ## Flag
 
-```
+```text
 EcowasCTF{vm_ng0m4_spn_r1ng_0bf}
 ```
 

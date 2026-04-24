@@ -14,6 +14,8 @@ toc: true
 
 ## Fichiers du challenge
 
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+
 | Fichier | Télécharger |
 |---------|-------------|
 | `yoruba_vm.zip` | [⬇ Télécharger](/portfolio/blog/assets/files/ecowas-2026/76_yoruba_vm.zip) |
@@ -90,7 +92,7 @@ $$\Rightarrow \text{input}[i] = \text{SBOX}^{-1}[\text{targets}[i]] \oplus \text
 
 ## Flag
 
-```
+```text
 EcowasCTF{y0rub4_vm_r3v_master!}
 ```
 

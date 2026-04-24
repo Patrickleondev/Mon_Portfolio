@@ -68,7 +68,7 @@ done
 
 ## Flag
 
-```
+```text
 EcowasCTF{id0R_exp0sed_fl@g}
 ```
 
