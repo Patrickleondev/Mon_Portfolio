@@ -81,10 +81,4 @@ flag{l@y37s_0n_l@y3rs}
 
 ---
 
-## Leçon retenue
-
-- Pipeline en couches : STEGSNOW → Base64 → ZIP chiffré
-- ZipCrypto est crackable par dictionnaire — toujours vérifier le type de chiffrement avec `zipinfo -v`
-- Le mot de passe `stealth123` est dans rockyou mais loin du début (~198s de brute-force)
-
 **[← Retour à l'index ECOWAS CTF 2026](/portfolio/blog/posts/ecowas-ctf-2026/)**

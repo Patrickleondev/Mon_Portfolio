@@ -14,7 +14,7 @@ toc: true
 
 ## Fichiers du challenge
 
-> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus ou consultez les archives de la plateforme.
 
 | Fichier | Télécharger |
 |---------|-------------|
@@ -92,11 +92,5 @@ flag{c0v3rt_chAnn3l_m@st3r}
 ```
 
 ---
-
-## Leçon retenue
-
-- Dans les challenges multi-fichiers, le PCAP est souvent l'endroit où se cache la clé de chiffrement
-- STEGSNOW → AES est une combinaison classique dans les challenges avancés
-- Toujours rechercher des chaînes lisibles dans les captures réseau (`strings`, `tshark`)
 
 **[← Retour à l'index ECOWAS CTF 2026](/portfolio/blog/posts/ecowas-ctf-2026/)**

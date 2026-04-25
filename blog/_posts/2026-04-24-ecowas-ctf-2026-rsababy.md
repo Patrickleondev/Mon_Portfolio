@@ -83,10 +83,4 @@ EcowasCTF{cub3_r00t_n0_p4dd1ng_ez}
 
 ---
 
-## Leçon retenue
-
-- RSA avec `e=3` sans padding → racine cubique directe si `m³ < n`
-- `gmpy2.iroot(c, e)` est la fonction de référence pour les racines entières exactes
-- Toujours vérifier si la réduction modulaire a eu lieu : si `c < n^(1/e)` alors c'est direct
-
 **[← Retour à l'index ECOWAS CTF 2026](/portfolio/blog/posts/ecowas-ctf-2026/)**

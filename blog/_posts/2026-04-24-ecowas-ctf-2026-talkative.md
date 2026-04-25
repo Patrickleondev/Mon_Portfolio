@@ -87,10 +87,4 @@ EcowasCTF{DRUMS_THAT_TALK_ACROSS_THE_SAVANNAH}
 
 ---
 
-## Leçon retenue
-
-- Les **talking drums** (djembe, fontomfrom) permettent de communiquer sur de longues distances en Afrique de l'Ouest — analogie avec le Morse
-- Attention au dernier mot : SAVANNAH se termine en `-H` (7 lettres), pas SAVANNAS
-- CyberChef "From Morse Code" est le plus rapide pour ce type de challenge
-
 **[← Retour à l'index ECOWAS CTF 2026](/portfolio/blog/posts/ecowas-ctf-2026/)**

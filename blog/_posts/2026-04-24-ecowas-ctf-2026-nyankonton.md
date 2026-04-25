@@ -14,7 +14,7 @@ toc: true
 
 ## Fichiers du challenge
 
-> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus ou consultez les archives de la plateforme.
 
 | Fichier | Télécharger |
 |---------|-------------|
@@ -63,11 +63,5 @@ EcowasCTF{ny4n_ny4n_w4rp_p0rt4l_f0und_@t_last!!}
 ```
 
 ---
-
-## Leçon retenue
-
-- Les binaires Mach-O ARM64 s'analysent bien dans Ghidra (même sur Windows)
-- Le XOR avec une constante 64 bits répétée est un schéma de chiffrement très commun dans les challenges Reverse
-- Chercher les constantes 64 bits hardcodées dans les instructions `MOV` ARM64
 
 **[← Retour à l'index ECOWAS CTF 2026](/portfolio/blog/posts/ecowas-ctf-2026/)**

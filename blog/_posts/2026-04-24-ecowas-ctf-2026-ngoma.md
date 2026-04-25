@@ -14,7 +14,7 @@ toc: true
 
 ## Fichiers du challenge
 
-> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus ou consultez les archives de la plateforme.
 
 | Fichier | Télécharger |
 |---------|-------------|
@@ -77,11 +77,5 @@ EcowasCTF{vm_ng0m4_spn_r1ng_0bf}
 ```
 
 ---
-
-## Leçon retenue
-
-- UPX est détectable via `file` + les chaînes `UPX!` dans le binaire — toujours décompresser avant d'analyser
-- Les VMs customisées ont souvent des patterns de transformation simples (XOR avec position)
-- `(i * 91) ^ 0xa3` : la multiplication par 91 crée un flux pseudo-aléatoire mais inversible
 
 **[← Retour à l'index ECOWAS CTF 2026](/portfolio/blog/posts/ecowas-ctf-2026/)**

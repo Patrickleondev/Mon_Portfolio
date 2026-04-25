@@ -47,9 +47,4 @@ EcowasCTF{wh1t3sp4c3_s3cr3ts_h1dd3n}
 
 ---
 
-## Leçon retenue
-
-- Toujours inspecter les caractères invisibles de fin de ligne avec `hexdump -C` ou `cat -A`
-- STEGSNOW = stéganographie dans les espaces blancs, réflexe à avoir sur tout fichier texte
-
 **[← Retour à l'index ECOWAS CTF 2026](/portfolio/blog/posts/ecowas-ctf-2026/)**

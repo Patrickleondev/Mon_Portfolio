@@ -14,7 +14,7 @@ toc: true
 
 ## Fichiers du challenge
 
-> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus ou consultez les archives de la plateforme.
 
 | Fichier | Télécharger |
 |---------|-------------|
@@ -62,11 +62,5 @@ EcowasCTF{00:11:22:33:44:55}
 ```
 
 ---
-
-## Leçon retenue
-
-- ARP Poisoning = réponses ARP non sollicitées (gratuitous ARP) en masse
-- `tshark -Y "arp.opcode == 2"` + statistiques = détection rapide de l'attaquant
-- Le flag est directement l'adresse MAC de l'attaquant (avec les deux-points)
 
 **[← Retour à l'index ECOWAS CTF 2026](/portfolio/blog/posts/ecowas-ctf-2026/)**

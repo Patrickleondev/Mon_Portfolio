@@ -14,7 +14,7 @@ toc: true
 
 ## Fichiers du challenge
 
-> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus ou consultez les archives de la plateforme.
 
 | Fichier | Télécharger |
 |---------|-------------|
@@ -88,11 +88,5 @@ EcowasCTF{0nly_0n3_g4t3_0p3ns_th3_w4y}
 ```
 
 ---
-
-## Leçon retenue
-
-- Face à des leurres en masse : chercher le flag **sémantiquement cohérent** avec le challenge
-- Le flag auto-référentiel est une signature classique dans ce type de challenge
-- `strings | grep` sur le binaire suffit ici — pas besoin de décompilation complète
 
 **[← Retour à l'index ECOWAS CTF 2026](/portfolio/blog/posts/ecowas-ctf-2026/)**

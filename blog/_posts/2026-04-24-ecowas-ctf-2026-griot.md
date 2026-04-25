@@ -14,7 +14,7 @@ toc: true
 
 ## Fichiers du challenge
 
-> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus ou consultez les archives de la plateforme.
 
 | Fichier | Télécharger |
 |---------|-------------|
@@ -101,12 +101,5 @@ EcowasCTF{f1rmw4r3_xor_fs_dump_gr10t}
 ```
 
 ---
-
-## Leçon retenue
-
-- Firmware IoT = souvent un container custom (XOR/RC4) → GZIP → TAR/SquashFS
-- `zlib.MAX_WBITS | 16` permet de décompresser GZIP avec Python zlib
-- Les credentials sont souvent encodés en Base64 dans les fichiers de config embarqués
-- Référence culturelle : le **Griot** est un conteur/dépositaire de mémoire en Afrique de l'Ouest
 
 **[← Retour à l'index ECOWAS CTF 2026](/portfolio/blog/posts/ecowas-ctf-2026/)**

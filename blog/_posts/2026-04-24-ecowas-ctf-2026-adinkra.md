@@ -14,7 +14,7 @@ toc: true
 
 ## Fichiers du challenge
 
-> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus, [contactez-moi](https://patrickleondev.github.io/portfolio/#contact) ou consultez les archives de la plateforme.
+> ⚠️ **Note :** Les fichiers sont hébergés sur la plateforme ECOWAS CTF. Les liens de téléchargement peuvent expirer après la fin de la compétition. Si un lien ne fonctionne plus ou consultez les archives de la plateforme.
 
 | Fichier | Télécharger |
 |---------|-------------|
@@ -73,11 +73,5 @@ EcowasCTF{gx3_ny4m3_3xc3pt_g0d}
 ```
 
 ---
-
-## Leçon retenue
-
-- Les challenges ECOWAS utilisent souvent des références culturelles ouest-africaines comme clés (symboles Adinkra, nombres d'urgence, anniversaires)
-- **Gye Nyame** = symbole Adinkra le plus connu, signifiant la suprématie divine
-- Toujours chercher le contexte culturel en parallèle de l'analyse technique
 
 **[← Retour à l'index ECOWAS CTF 2026](/portfolio/blog/posts/ecowas-ctf-2026/)**

@@ -60,10 +60,4 @@ EcowasCTF{c00kie_c0llect0r_m@st3R>!}
 
 ---
 
-## Leçon retenue
-
-- Toujours décoder les cookies (Base64, Hex, JWT) avant de passer à autre chose
-- Les cookies hexadécimaux pointent souvent vers des endpoints cachés
-- `curl -v` est suffisant pour le recon initial sur les challenges web simples
-
 **[← Retour à l'index ECOWAS CTF 2026](/portfolio/blog/posts/ecowas-ctf-2026/)**

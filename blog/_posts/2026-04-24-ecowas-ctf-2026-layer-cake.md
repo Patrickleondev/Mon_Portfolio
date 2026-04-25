@@ -63,10 +63,4 @@ EcowasCTF{l4y3r_by_l4y3r_sw33t}
 
 ---
 
-## Leçon retenue
-
-- Les challenges d'encodage en couches : toujours essayer CyberChef Magic en premier
-- L'inversion de chaîne Base64 est un piège classique — vérifier si `len % 4 == 0` avant de décoder
-- Pipeline : Base64 inversé → Hex → Base64 → flag
-
 **[← Retour à l'index ECOWAS CTF 2026](/portfolio/blog/posts/ecowas-ctf-2026/)**
