@@ -20,7 +20,21 @@ Live web challenge at `http://labs.ecowasctf.com.gh:5002/`
 
 ## Reconnaissance
 
-On visite `GET /` :
+On visite `GET /` et on analyse la réponse HTTP.
+
+**Via curl :**
+```bash
+curl -i http://labs.ecowasctf.com.gh:5002/
+```
+
+**Via le navigateur + DevTools :**
+- Ouvrir les **DevTools** (`F12`)
+- Onglet **Application** → **Cookies** → `http://labs.ecowasctf.com.gh:5002`
+- Le cookie `token` apparaît avec sa valeur hexadécimale
+
+**Via Burp Suite :**
+- Activer le proxy Burp, visiter la page
+- Dans `HTTP History`, voir la réponse avec le header `Set-Cookie`
 
 ```http
 HTTP/1.1 200 OK

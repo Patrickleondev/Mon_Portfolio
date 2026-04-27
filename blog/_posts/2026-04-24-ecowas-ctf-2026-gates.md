@@ -56,6 +56,18 @@ cf fa ed fe  →  0xFEEDFACF en big-endian  →  "FEEDFACE" / Mach-O 64-bit LE
 
 ## Étape 2 — Extraction des chaînes (strings)
 
+Avant tout désassemblage, la commande `strings` (ou son équivalent Python) permet de voir toutes les chaînes ASCII visibles dans le binaire. C'est souvent la première chose à faire sur un binaire inconnu :
+
+```bash
+# Méthode shell (Linux/Mac)
+strings gates | grep -E "EcowasCTF|flag|decoy"
+
+# Méthode Kali/outil intégré
+strings gates
+```
+
+**Ou en Python (cross-platform, fonctionne aussi sur Windows) :**
+
 ```python
 import re
 

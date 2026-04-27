@@ -32,12 +32,48 @@ toc: true
 
 ### Identification du binaire
 
-```
-Magic: 0xCFFAEDFE  → Mach-O ARM64 (little-endian, 64-bit)
-Taille: 116 352 octets
+Première étape systématique sur tout binaire inconnu :
+
+```bash
+file swahili_mangle
+# swahili_mangle: Mach-O 64-bit arm64 executable, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|PIE>
 ```
 
-Même série que les autres challenges reverse de cet événement — des binaires macOS ARM64 analysés **statiquement** sous Windows avec capstone.
+```bash
+strings swahili_mangle | head -20  # chercher des indices dans les chaînes visibles
+```
+
+**Note :** Ce binaire est un **Mach-O ARM64** (format macOS Apple Silicon). Sur Linux/Windows, on ne peut pas l'exécuter directement, mais l'analyse **statique** est tout à fait possible.
+
+### Analyse avec Ghidra
+
+**Ghidra** permet d'importer et désassembler ce binaire même sur Windows/Linux :
+
+1. `File` → `Import File` → `swahili_mangle`
+   - Ghidra détecte automatiquement : `Mach-O 64-bit ARM64`
+2. `Auto-analyze` → **Yes** (laisser toutes les options par défaut)
+3. Dans `Symbol Tree` → `Functions` → `main` → double-clic
+4. Le **Decompiler** (volet droit) affiche le pseudo-code de la boucle de validation
+
+Dans Ghidra, on repère :
+- Une boucle sur 40 caractères (la longueur du flag)
+- Des appels répétés à des fonctions de lookup → white-box
+- Une section `__const` (accessible via `Window` → `Memory Map`) contenant les tables et les valeurs attendues
+
+**Alternative : Capstone + Python** (analyse directement depuis le fichier binaire, sans GUI) :
+
+```python
+import capstone, struct
+
+with open('swahili_mangle', 'rb') as f:
+    binary = f.read()
+
+# Désassembler la section __text pour comprendre la logique
+md = capstone.Cs(capstone.CS_ARCH_ARM64, capstone.CS_MODE_ARM)
+TEXT_OFFSET = 0x3f62  # offset __text dans le fichier (ajuster via readelf ou Ghidra)
+for instr in md.disasm(binary[TEXT_OFFSET:TEXT_OFFSET+200], 0x100003f62):
+    print(f"0x{instr.address:x}: {instr.mnemonic}\t{instr.op_str}")
+```
 
 ### Architecture de l'algorithme
 

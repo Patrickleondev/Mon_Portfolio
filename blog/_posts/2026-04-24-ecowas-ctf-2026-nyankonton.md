@@ -77,7 +77,33 @@ _NK_FLAG_CT    0x100003F68
 
 ---
 
-## Étape 3 — Analyser la logique du jeu (Ghidra / IDA)
+## Étape 3 — Analyser la logique du jeu avec Ghidra
+
+### Workflow Ghidra pour ce binaire Mach-O ARM64
+
+**Ghidra** est un outil de décompilation/désassemblage gratuit développé par la NSA. Voici les étapes exactes pour ce binaire :
+
+1. **Lancer Ghidra** → `File` → `New Project` → `Non-Shared Project` → donner un nom
+2. **Importer le binaire** → `File` → `Import File` → sélectionner `nyancat`
+   - Ghidra détecte automatiquement : `Mach-O 64-bit ARM64`
+   - Cliquer **OK** puis **Yes** pour lancer l'auto-analyse
+3. **Auto-analyse** → cocher toutes les options par défaut → **Analyze**
+   - L'analyse prend 5-30 secondes selon la machine
+4. **Trouver les fonctions** :
+   - Panneau `Symbol Tree` (à gauche) → `Functions` → chercher `_main` ou `main`
+   - Double-clic pour aller à la fonction principale
+5. **Activer le décompilateur** :
+   - Cliquer sur une instruction dans le listing → le volet **Decompiler** (à droite) affiche le pseudo-code C
+   - Raccourci : `Window` → `Decompiler`
+6. **Trouver `_NK_FLAG_CT`** :
+   - `Search` → `For Strings` → filtrer `NK_FLAG` pour le localiser
+   - Ou naviguer via `Symbol Tree` → `Labels`
+
+> **Alternative : nm + objdump** (plus rapide pour un binaire non strippé)
+> ```bash
+> nm nyancat | grep -i flag    # liste les symboles contenant "flag"
+> objdump -d nyancat | less   # désassemblage complet
+> ```
 
 On ouvre le binaire dans **Ghidra** (décompilateur gratuit de la NSA).
 

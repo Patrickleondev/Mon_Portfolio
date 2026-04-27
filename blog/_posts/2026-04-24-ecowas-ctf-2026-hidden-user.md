@@ -21,7 +21,7 @@ Un panneau de gestion utilisateur. Quelque chose est resté en production qu'il 
 ## Analyse
 
 **Chaîne d'exploitation :**
-1. Commentaire HTML → référence à un fichier JavaScript
+1. Source HTML → commentaire → référence à un fichier JavaScript
 2. JS → endpoint de debug hardcodé
 3. Endpoint de debug → chemin encodé en Base64
 4. Route cachée → flag
@@ -32,9 +32,18 @@ Un panneau de gestion utilisateur. Quelque chose est resté en production qu'il 
 
 ### Étape 1 — Lire le source HTML
 
+**Via le navigateur :**
+- Clic droit sur la page → `View Page Source` (ou `Ctrl+U`)
+- Chercher `<!--` et `.js` pour trouver les commentaires et scripts
+
+**Via curl :**
 ```bash
-curl http://challenge-url/ | grep -i "<!--\|\.js"
+curl http://challenge-url/ | grep -E "<!--|\\.js"
 ```
+
+**Via Burp Suite :**
+- Intercepter la réponse HTTP dans `HTTP History`
+- Dans le volet Response, faire `Ctrl+F` pour chercher "js" ou "debug"
 
 Commentaire trouvé :
 ```html

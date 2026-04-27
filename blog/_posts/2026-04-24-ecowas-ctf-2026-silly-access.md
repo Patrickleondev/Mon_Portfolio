@@ -44,7 +44,24 @@ La racine `/` renvoie un **200 avec body vide** pour toutes les requêtes. L'app
 
 ### Directory fuzzing — l'étape clé
 
-Avec des wordlists standards (SecLists `common.txt`), on découvre :
+On utilise **Gobuster** (ou **ffuf**) pour découvrir les routes cachées :
+
+```bash
+# Avec Gobuster
+gobuster dir \
+  -u http://labs.ctfzone.com:5003/ \
+  -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt \
+  -t 50
+
+# Ou avec ffuf
+ffuf -u http://labs.ctfzone.com:5003/FUZZ \
+     -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt \
+     -mc 200,301,302,403
+```
+
+> **Burp Suite** peut aussi être utilisé : activer le proxy dans le navigateur, visiter le site, puis lancer le **Spider** ou l'**Active Scan** pour découvrir les endpoints. Aller dans `Target` → `Site map` → clic droit → `Spider this host`.
+
+Résultat :
 
 ```
 GET /portal → 403 Forbidden

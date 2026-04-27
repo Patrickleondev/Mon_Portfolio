@@ -80,9 +80,27 @@ strings yoruba_vm | head -30
 
 ---
 
-## Étape 2 : Désassemblage — Trouver la logique de validation
+## Étape 2 : Désassemblage avec Ghidra
 
-On ouvre le binaire dans Ghidra (ou tout désassembleur). On cherche les références croisées vers la chaîne `"Correct!"` pour localiser la fonction de validation.
+### Workflow Ghidra pour ce binaire ELF x86-64
+
+1. **Lancer Ghidra** → `File` → `New Project` → choisir un dossier et un nom
+2. **Importer** → `File` → `Import File` → sélectionner `yoruba_vm`
+   - Ghidra détecte : `ELF 64-bit x86-64` (format Linux standard)
+   - Cliquer **OK** puis **Yes** pour l'auto-analyse
+3. **Auto-analyse** → laisser toutes les options par défaut → **Analyze** (10-20 secondes)
+4. **Localiser la fonction de validation via les chaînes** :
+   - `Search` → `For Strings` → taper `Correct`
+   - Double-clic sur `"Correct!"` → Ghidra va à l'adresse dans le listing
+   - Clic droit → `References` → `Find References to Address` → voir qui appelle ce code
+5. **Aller à `main`** :
+   - `Symbol Tree` → `Functions` → `main` → double-clic
+   - Le volet **Decompiler** (droite) affiche le pseudo-code C
+6. **Identifier les variables** :
+   - Dans le décompilateur, renommer les variables (`L` pour renommer) pour rendre le code lisible
+   - Les tableaux de taille 256, 32 correspondent à : S-Box, clés, cibles
+
+On cherche les références croisées vers la chaîne `"Correct!"` pour localiser la fonction de validation.
 
 Le pseudo-code pertinent :
 
